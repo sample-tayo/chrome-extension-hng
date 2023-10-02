@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome-extension",
+  "version": "1.0.1",
+  "description": "Record your screen",
+  "permissions": ["activeTab", "desktopCapture", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html", 
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "backgroung.js"
+   
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "host_permissions": [  
+    "http://*/*",
+    "https://*/*"
+  ]
+}
